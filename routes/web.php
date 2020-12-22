@@ -13,4 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //ララベル表示
-Route::get('/','Laravel_newsController@showList')->name('laravel_news');
+Route::get('/', 'UsersController@showList')->name('users');
+//コメント画面表示
+Route::get('/user/{id}', 'UsersController@showDetail')->name('show');
+

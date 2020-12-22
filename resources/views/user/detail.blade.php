@@ -1,0 +1,9 @@
+  @extends('layout')
+  @section('title','コメント画面')
+  @section('content')
+  <div>
+     <h2>{{$users->title}}</h2>
+     <span>作成日{{$users->created_at}}</span>
+     <span>更新日{{$users->update_at}}</span>
+  </div>
+  @endsection
